@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>QRコードを作成！</title>
+    <title>Yahoo...?</title>
 </head>
 <body>
-    処理中です<br>ちょっと待ってね
-    <script>setTimeout(function(){location.reload();},1000);</script>
+    処理中だお<br>まぁいつか見れるから気長に待とうや<br>
+    <span id="randomMessage"></span>
+    
+    <script>
+        // ランダムな文章の配列
+        var messages = [
+            "焦らずゆっくり待とうね！",
+            "お茶でも飲んで待とうか。",
+            "少しリラックスしよう！",
+            "もうすぐだよ！",
+            "気長に構えてみてね。",
+            "何か他のことをしてみるのもいいかも！"
+        ];
+
+        // ランダムに選んだ文章を表示する
+        var randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById("randomMessage").innerText = randomMessage;
+
+        // 1秒後にページをリロード
+        setTimeout(function() {
+            location.reload();
+        }, 1000);
+    </script>
 </body>
 </html>
