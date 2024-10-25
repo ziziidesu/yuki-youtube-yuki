@@ -12,7 +12,7 @@ from cache import cache
 
 max_api_wait_time = 3
 max_time = 10
-apis = ast.literal_eval(requests.get('https://raw.githubusercontent.com/justaweidro/yahoo-inv/main/instances_1.txt').text)
+apis = ast.literal_eval(requests.get('https://raw.githubusercontent.com/justaweidro/yahoo-inv/main/instances.txt').text)
 url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instance.txt').text.rstrip()
 version = "1.0"
 
