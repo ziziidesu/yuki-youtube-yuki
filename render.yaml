@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: yuki-yahoo
+    name: yuki-youtube-yahoo-ziziidesu
     env: python
     region: Oregon
     plan: free
